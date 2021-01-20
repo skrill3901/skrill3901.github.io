@@ -165,19 +165,12 @@ a {
 
 .adv ul {
   list-style-type: none;
+  list-style-image: url("../img/ok.svg");
 }
 
 .adv ul li {
   position: relative;
   line-height: 30px;
-}
-
-.adv ul li::before {
-  position: absolute;
-  content: '+';
-  font-size: 25px;
-  top: -2px;
-  left: -17px;
 }
 
 .footer {
