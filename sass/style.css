@@ -1,100 +1,64 @@
 * {
-  font-family: "Montserrat", sans-serif;
-}
-
-body {
-  background-color: #242424;
+  font-family: 'Montserrat', sans-serif;
 }
 
 a {
   text-decoration: none;
 }
 
-.header {
+.main-menu {
   overflow: hidden;
   background-color: #333;
-  position: sticky;
+  position: fixed;
   top: 0;
   width: 100%;
   display: flex;
   justify-content: center;
 }
 
-.header-logo-menu-container {
-  display: flex;
-  justify-content: space-between;
-  width: 1380px;
-  flex-direction: column;
-  align-items: center;
-}
-
-.header-logo {
-  color: #ffffff;
-  padding: 15px 0;
-}
-.header-logo:hover {
-  color: #ff9933;
-}
-
-.header-menu {
-  display: flex;
-  width: 1380px;
-  justify-content: space-between;
-  align-items: center;
-}
-.header-menu a {
-  color: #ffffff;
-  transition: 0.3s all;
-}
-.header-menu a:hover {
-  color: #b27cf5;
-}
-
-.header-menu-selected-page {
-  color: #ff9933 !important;
-}
-
-.header-sub-menu {
+.sub-menu {
   overflow: hidden;
-  margin: 48px 0 0 0;
+  padding-top: 48px;
   background-color: #333;
   position: fixed;
   top: 0;
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 
-.header-sub-menu-container {
+.logo {
+  color: #ffffff;
   padding: 15px 0;
-  width: 1000px;
-  display: flex;
-  justify-content: space-between;
+  margin-right: 25%;
 }
-.header-sub-menu-container a {
+
+.logo:hover {
+  color: #ff9933;
+}
+
+.menu {
+  padding: 15px 0;
+}
+
+.menu a {
   color: #ffffff;
   margin-left: 20px;
   transition: 0.3s all;
 }
-.header-sub-menu-container a:hover {
-  color: #c45d37;
+
+.menu a:hover {
+  color: #ff9933;
 }
 
-.main-container {
+.container {
   margin: 0 auto;
   width: 1380px;
-  background-color: #242424;
+  background-color: #ccffff;
 }
 
-.slider {
-  background-color: #000000;
-  height: 400px;
-  background-image: url("../img/leddisplay.jpg");
-  background-position: bottom;
-}
-
-.slider-selected-page {
-  margin-top: 152px;
+.head {
+  margin-top: 48px;
   background-color: #000000;
   height: 400px;
   background-image: url("../img/leddisplay.jpg");
@@ -103,10 +67,12 @@ a {
 
 .btn {
   color: #333;
-  background-color: #c45d37;
+  background-color: #ff9933;
+  border-radius: 10px;
   padding: 5px 10px;
   transition: 0.3s all;
 }
+
 .btn:hover {
   background-color: #ffffff;
   color: #333333;
@@ -115,39 +81,51 @@ a {
 .ledsc {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
   margin: 10px 0 0 0;
   padding-bottom: 20px;
-  color: #ffffff;
 }
 
 .ledsc-content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 15%;
+  width: 21%;
   text-align: center;
   margin-bottom: 10px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
+
 .ledsc-content::after {
-  content: "";
+  content: '';
   width: 70%;
   height: 3px;
   background-color: #fc5f45;
 }
+
 .ledsc-content:nth-child(2)::after {
   background-color: #38c695;
 }
+
 .ledsc-content:nth-child(3)::after {
   background-color: #b27cf5;
 }
+
 .ledsc-content:nth-child(4)::after {
   background-color: #C21460;
 }
+
 .ledsc-content:nth-child(5)::after {
+  background-color: #0247FE;
+}
+
+.ledsc-content:nth-child(6)::after {
+  background-color: #FE2712;
+}
+
+.ledsc-content:nth-child(7)::after {
   background-color: #feb960;
 }
 
@@ -156,9 +134,11 @@ a {
   margin-top: 5px;
   height: 250px;
 }
+
 .flex-img:first-child {
   width: 48%;
 }
+
 .flex-img:last-child {
   width: 48%;
 }
@@ -174,6 +154,7 @@ a {
 .partners-img {
   margin: 20px 20px 0 20px;
 }
+
 .partners-img:nth-child(n+6) {
   margin-bottom: 20px;
 }
@@ -187,41 +168,46 @@ a {
 }
 
 .adv {
-  background-color: #242424;
+  background-color: #fff;
   display: flex;
   justify-content: space-evenly;
   padding: 20px 0 20px 0;
-  color: #fff;
 }
+
 .adv ul {
   list-style-type: none;
 }
+
 .adv ul li {
   position: relative;
   line-height: 30px;
 }
+
 .adv ul li::before {
   position: absolute;
-  content: "+";
+  content: '+';
   font-size: 25px;
   top: -2px;
   left: -17px;
 }
 
 .footer {
-  background-color: #333;
+  background-color: #994d00;
   display: flex;
   padding: 20px;
   justify-content: flex-end;
 }
+
 .footer a {
   margin-right: 50px;
   align-self: center;
   color: #fff;
 }
+
 .footer a:hover {
   color: #b27cf5;
 }
+
 .footer span {
   font-size: 15px;
   margin-bottom: 10px;
@@ -236,9 +222,8 @@ a {
   line-height: 17px;
   border-left: 2px solid black;
   padding-left: 10px;
-  color: #c45d37;
 }
+
 .footer-info a {
-  transition: 0.3s all;
   align-self: start;
 }

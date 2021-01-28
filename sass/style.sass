@@ -1,43 +1,87 @@
+
+
 *
     font-family: 'Montserrat', sans-serif
+body
+    background-color: #242424
 a
     text-decoration: none
-.main-menu
+.header
     overflow: hidden
+    background-color: #333
+    position: sticky
+    top: 0
+    width: 100%
+    display: flex
+    justify-content: center
+
+.header-logo-menu-container
+    display: flex
+    justify-content: space-between
+    width: 1380px
+    flex-direction: column
+    align-items: center
+.header-logo
+    color: #ffffff
+    padding: 15px 0
+    &:hover
+        color: #ff9933
+.header-menu
+    display: flex
+    width: 1380px
+    justify-content: space-between
+    align-items: center
+    a
+        color: #ffffff
+        transition: 0.3s all
+        &:hover
+            color: #b27cf5
+
+.header-menu-selected-page
+    color: #ff9933 !important
+
+.header-sub-menu
+    overflow: hidden
+    margin: 48px 0 0 0
     background-color: #333
     position: fixed
     top: 0
     width: 100%
     display: flex
-    justify-content: center
-.logo
-    color: #ffffff
+    justify-content: space-around
+
+.header-sub-menu-container
     padding: 15px 0
-    margin-right: 25%
-    &:hover
-        color: #ff9933
-.menu
-    padding: 15px 0
+    width: 1000px
+    display: flex
+    justify-content: space-between
     a
         color: #ffffff
         margin-left: 20px
         transition: 0.3s all
         &:hover
-            color: #ff9933
-.container
+            color: #c45d37
+
+.main-container
     margin: 0 auto
     width: 1380px
-    background-color: #ccffff
-.head
-    margin-top: 48px
+    background-color: #242424
+.slider
     background-color: #000000
     height: 400px
     background-image: url('../img/leddisplay.jpg')
     background-position: bottom
+
+.slider-selected-page
+    margin-top: 152px
+    background-color: #000000
+    height: 400px
+    background-image: url('../img/leddisplay.jpg')
+    background-position: bottom
+
 .btn
     color: #333
-    background-color: #ff9933
-    border-radius: 10px
+    background-color: #c45d37
     padding: 5px 10px
     transition: 0.3s all
     &:hover
@@ -46,14 +90,15 @@ a
 .ledsc
     display: flex
     flex-wrap: wrap
-    justify-content: center
+    justify-content: space-evenly
     margin: 10px 0 0 0
     padding-bottom: 20px
+    color: #ffffff
 .ledsc-content
     display: flex
     flex-direction: column
     align-items: center
-    width: 21%
+    width: 15%
     text-align: center
     margin-bottom: 10px
     display: flex
@@ -71,10 +116,6 @@ a
     &:nth-child(4)::after
         background-color: #C21460
     &:nth-child(5)::after
-        background-color: #0247FE
-    &:nth-child(6)::after
-        background-color: #FE2712
-    &:nth-child(7)::after
         background-color: #feb960
 .flex-img
     width: 25%
@@ -101,18 +142,24 @@ a
     align-items: center
     font-size: 70px
 .adv
-    background-color: #fff
+    background-color: #242424
     display: flex
     justify-content: space-evenly
     padding: 20px 0 20px 0
+    color: #fff
     ul
         list-style-type: none
-        list-style-image: url('../img/ok.svg')
         li
             position: relative
             line-height: 30px
+            &::before
+                position: absolute
+                content: '+'
+                font-size: 25px
+                top: -2px
+                left: -17px
 .footer
-    background-color: #994d00
+    background-color: #333
     display: flex
     padding: 20px
     justify-content: flex-end
@@ -120,7 +167,6 @@ a
         margin-right: 50px
         align-self: center
         color: #fff
-        transition: 0.3s all
         &:hover
             color: #b27cf5
     span
@@ -135,6 +181,7 @@ a
     line-height: 17px
     border-left: 2px solid black
     padding-left: 10px
+    color: #c45d37
     a
+        transition: 0.3s all
         align-self: start
-    
