@@ -6,6 +6,7 @@
     <title>Контакты</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_contacts.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap" rel="stylesheet">
   </head>
@@ -14,19 +15,55 @@
       <div class="header-logo-menu-container">
         <nav class="header-menu">
           <a href="index.html" class="header-logo">Logo</a>
-          <a href="products.html">Продукция</a>
-          <a href="services.html">Услуги</a>
-          <a href="about.html">О компании</a>
-          <a href="contacts.html" class="header-menu-selected-page">Контакты</a>
-          <a href="actions.html">Акции</a>
+          <li>
+            <a href="products.html">Продукция</a>
+            <a href="services.html">Услуги</a>
+            <a href="about.html">О компании</a>
+            <a href="contacts.html">Контакты</a>
+            <a href="actions.html">Акции</a>
+          </li>
           <a href="checkout.html" class="btn">Оформить заказ</a>
         </nav>
       </div>
     </div>
     <div class="main-container">
-      123
+      <h1 class="h-title"> Мы находимся здесь </h1>
+       <hr>
+      <div class="main-container-map-info">
+        <div class="main-container-map">
+          <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A8e8a2d93a5a0b7cbdc1abae06dfcc61984dd390d836703792078a75f9b37811a&amp;source=constructor" width="722" height="492" frameborder="0"></iframe>
+        </div>
+        <div class="main-container-info">
+          <div class="main-container-info-text">
+            Наш офис расположен *АДРЕС РАСПОЛОЖЕНИЯ ОФИСА*. Срок исполнения заказа зависит от объема работы. Работаем на территории России и стран СНГ. Условия оплаты: *ЗДЕСЬ УСЛОВИЯ ОПЛАТЫ*. Наш офис расположен *АДРЕС РАСПОЛОЖЕНИЯ ОФИСА*. Срок исполнения заказа зависит от объема работы. Работаем на территории России и стран СНГ. Условия оплаты: *ЗДЕСЬ УСЛОВИЯ ОПЛАТЫ*. Наш офис расположен *АДРЕС РАСПОЛОЖЕНИЯ ОФИСА*. Срок исполнения заказа зависит от объема работы. Работаем на территории России и стран СНГ. Условия оплаты: *ЗДЕСЬ УСЛОВИЯ ОПЛАТЫ*.
+          </div>
+          <div class="main-container-info-address">
+            <p>г. Екатеринбург</p>
+            <p>ул. Такая-то</p>
+            <p>оф 4</p>
+          </div>
+          <div class="main-container-info-phone">
+            <p>Телефон:</p>
+            <p>+7(xxx)xxx-xx-xx</p>
+            <p>+7(xxx)xxx-xx-xx</p>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="contacts-form">
+        <h1 class="h-title"> Форма обратной связи </h2>
+        <h4 class="h-title"> Вы можете отправить детали вашего заказа через эту форму, мы свяжемся с вами в течение 24 часов. </h4>
+        <form action="#" method="post" class="form contactForm" id="contactForm" novalidate="novalidate">
+          <p><input type="text" name="contactName" class="required text-field" id="contactName" placeholder="Ваше имя*" required="required"></p>
+          <p><input type="email" name="contactEmail" class="required text-field" id="contactEmail" placeholder="E-mail*" required="required"></p>
+          <p><input type="email" name="contactEmail" class="required text-field" id="contactEmail" placeholder="Номер телефона*" required="required"></p>
+          <textarea class="required text-field-description" name="contactMessage" id="contactMessage" rows="32" cols="8" placeholder="Кратко опишите детали заказа*" required="required"></textarea>
+          <p><span id="msg">* = обязательные поля</span></p>
+          <p><input type="submit" class="submit submitTheme submitForm" id="submitContact" name="submitContact" value="Отправить"></p>
+        </form>
+      </div>
     </div>
-    <section class="footer">
+    <section class="footer" stylle="display: none">
       <a href="#">Место для лого</a>
       <div class="footer-info">
         <span>LED экраны</span>

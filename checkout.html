@@ -6,6 +6,7 @@
     <title>Оформить заказ</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_checkout.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap" rel="stylesheet">
   </head>
@@ -14,19 +15,39 @@
       <div class="header-logo-menu-container">
         <nav class="header-menu">
           <a href="index.html" class="header-logo">Logo</a>
-          <a href="products.html">Продукция</a>
-          <a href="services.html">Услуги</a>
-          <a href="about.html">О компании</a>
-          <a href="contacts.html">Контакты</a>
-          <a href="actions.html">Акции</a>
+          <li>
+            <a href="products.html">Продукция</a>
+            <a href="services.html">Услуги</a>
+            <a href="about.html">О компании</a>
+            <a href="contacts.html">Контакты</a>
+            <a href="actions.html">Акции</a>
+          </li>
           <a href="checkout.html" class="btn">Оформить заказ</a>
         </nav>
       </div>
     </div>
     <div class="main-container">
-      
+      <div class="contacts-form">
+        <h1 class="h-title"> Оформление заказа </h2>
+        <h4 class="h-title"> Здесь вы можете описать детали заказа более подробно. </h4>
+        <form action="#" method="post" class="form contactForm" id="contactForm" novalidate="novalidate">
+          <p><input type="text" name="contactName" class="required text-field" id="contactName" placeholder="Ваше имя*" required="required"></p>
+          <p><input type="email" name="contactEmail" class="required text-field" id="contactEmail" placeholder="E-mail*" required="required"></p>
+          <p><input type="email" name="contactEmail" class="required text-field" id="contactEmail" placeholder="Номер телефона*" required="required"></p>
+          <textarea class="required text-field-description" name="contactMessage" id="contactMessage" rows="32" cols="8" placeholder="Опишите детали заказа*" required="required"></textarea>
+          <p><span id="msg">* = обязательные поля</span></p>
+          <p><input type="submit" class="submit submitTheme submitForm" id="submitContact" name="submitContact" value="Отправить"></p>
+        </form>
+      </div>
     </div>
-    <section class="footer">
+    <h4 class="h-title h-title-bottom">
+      <p>Если у вас возникнут вопросы, вы можете связаться с нами по телефонам:</p>
+      <p>+7(xxx)xxx-xx-xx</p>
+      <p>+7(xxx)xxx-xx-xx</p>
+      <p>Или по почтовому адресу:</p>
+      <p>example@example.com</p>
+    </h4>
+    <section class="footer" stylle="display: none">
       <a href="#">Место для лого</a>
       <div class="footer-info">
         <span>LED экраны</span>

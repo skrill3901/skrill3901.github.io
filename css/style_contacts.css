@@ -1,0 +1,66 @@
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h4  {
+  font-weight: 200;
+  text-align: center;
+}
+
+h4 {
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  padding: 20px 0 0 0;
+}
+
+.main-container-map-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 30px 0 30px 0;
+}
+
+.main-container-info {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  padding: 70px 0 0px 70px;
+  font-weight: 200;
+}
+
+.required {
+  width: 830px;
+  border-radius: 0;
+  border-width: 1px;
+}
+
+.submitForm {
+  border: none;
+  border-radius: 0;
+  width: 150px;
+  height: 50px;
+  background-color: #c45d37;
+  color: white;
+}
+
+.text-field {
+  height: 50px;
+}
+
+.text-field-description {
+  height: 200px;
+}
+
+.contacts-form {
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  padding: 0 0 30px 0;
+}

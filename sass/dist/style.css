@@ -1,5 +1,6 @@
 * {
   font-family: "Montserrat", sans-serif;
+  font-weight: 300;
 }
 
 body {
@@ -33,7 +34,7 @@ a {
   padding: 15px 0;
 }
 .header-logo:hover {
-  color: #ff9933;
+  color: #c45d37;
 }
 
 .header-menu {
@@ -41,9 +42,16 @@ a {
   width: 1380px;
   justify-content: space-between;
   align-items: center;
+  font-weight: 500;
+}
+.header-menu li {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
 }
 .header-menu a {
   color: #ffffff;
+  font-weight: 400;
   transition: 0.3s all;
 }
 .header-menu a:hover {

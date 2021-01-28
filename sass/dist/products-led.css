@@ -1,0 +1,37 @@
+* {
+  color: #ffffff;
+}
+
+.common-h1 {
+  color: #ff9933;
+  text-align: center;
+}
+
+.common-text {
+  padding-left: 20px;
+}
+
+.street, .interior {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0 30px 0;
+}
+
+.street-text, .interior-text {
+  width: 60%;
+}
+
+.street-picture, .interior-picture {
+  background-color: #c45d37;
+  width: 500px;
+}
+
+.picture-box {
+  display: flex;
+  justify-content: space-evenly;
+}
+.picture-box div {
+  width: 20%;
+  height: 100px;
+  background-color: #fff;
+}
